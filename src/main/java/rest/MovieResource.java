@@ -16,7 +16,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 //Todo Remove or change relevant parts before ACTUAL use
-@Path("get")
+@Path("movie")
 public class MovieResource {
 
     private static final EntityManagerFactory EMF = EMF_Creator.createEntityManagerFactory(
@@ -31,7 +31,7 @@ public class MovieResource {
     @GET
     @Produces({MediaType.APPLICATION_JSON})
     public String demo() {
-        return "{\"msg\":\"Hello World\"}";
+        return "{\"msg\":\"Connection established\"}";
     }
 
     @Path("count")
@@ -55,6 +55,20 @@ public class MovieResource {
     @Produces({MediaType.APPLICATION_JSON})
     public String getMovieDTOByTitle(@PathParam("title") String title){
         return GSON.toJson(FACADE.getMovieDTOByTitle(title));
+    }
+
+    @Path("director/{director}")
+    @GET
+    @Produces({MediaType.APPLICATION_JSON})
+    public String getMovieByDirector(@PathParam("director") String director){
+        return GSON.toJson(FACADE.getMovieByDirector(director));
+    }
+
+    @Path("all")
+    @GET
+    @Produces({MediaType.APPLICATION_JSON})
+    public String getAllMovies(){
+        return GSON.toJson(FACADE.getAllMovies());
     }
 
     @POST

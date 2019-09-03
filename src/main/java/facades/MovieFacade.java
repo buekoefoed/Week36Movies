@@ -62,15 +62,30 @@ public class MovieFacade {
         try {
             TypedQuery query = em.createQuery("select m from Movie m where m.title like :title", Movie.class)
                     .setParameter("title", title);
-
             List<MovieDTO> movieDTOList = new ArrayList<>();
-
             for (int i = 0; i < query.getResultList().size(); i++) {
                 movieDTOList.add(new MovieDTO((Movie) query.getResultList().get(i)));
             }
-
             return movieDTOList;
+        } finally {
+            em.close();
+        }
+    }
 
+    public List<Movie> getMovieByDirector(String director){
+        EntityManager em = getEntityManager();
+        try {
+            return em.createQuery("select m from Movie m where m.director like :director", Movie.class)
+                    .setParameter("director", director).getResultList();
+        } finally {
+            em.close();
+        }
+    }
+
+    public List<Movie> getAllMovies(){
+        EntityManager em = getEntityManager();
+        try {
+            return em.createQuery("select m from Movie m", Movie.class).getResultList();
         } finally {
             em.close();
         }
