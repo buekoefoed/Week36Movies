@@ -1,6 +1,6 @@
 package rest;
 
-import entities.RenameMe;
+import entities.Movie;
 import utils.EMF_Creator;
 import io.restassured.RestAssured;
 import static io.restassured.RestAssured.given;
@@ -17,14 +17,13 @@ import static org.hamcrest.Matchers.equalTo;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import utils.EMF_Creator.DbSelector;
 import utils.EMF_Creator.Strategy;
 
 //Uncomment the line below, to temporarily disable this test
 //@Disabled
-public class RenameMeResourceTest {
+public class MovieResourceTest {
 
     private static final int SERVER_PORT = 7777;
     private static final String SERVER_URL = "http://localhost/api";
@@ -70,10 +69,9 @@ public class RenameMeResourceTest {
         EntityManager em = emf.createEntityManager();
         try {
             em.getTransaction().begin();
-            em.createNamedQuery("RenameMe.deleteAllRows").executeUpdate();
-            em.persist(new RenameMe("Some txt","More text"));
-            em.persist(new RenameMe("aaa","bbb"));
-           
+            em.createNamedQuery("Movie.deleteAllRows").executeUpdate();
+            em.persist(new Movie("Kill Bill: Volume 1","Quentin Tarantino",2003));
+            em.persist(new Movie("Kill Bill: Volume 2","Quentin Tarantino",2004));
             em.getTransaction().commit();
         } finally {
             em.close();
