@@ -33,6 +33,7 @@ public class MovieResource {
     public String demo() {
         return "{\"msg\":\"Hello World\"}";
     }
+
     @Path("count")
     @GET
     @Produces({MediaType.APPLICATION_JSON})
@@ -40,6 +41,20 @@ public class MovieResource {
         long count = FACADE.getMovieCount();
         //System.out.println("--------------->"+count);
         return "{\"count\":"+count+"}";  //Done manually so no need for a DTO
+    }
+
+    @Path("id/{id}")
+    @GET
+    @Produces({MediaType.APPLICATION_JSON})
+    public String getMovieById(@PathParam("id") Long id){
+        return GSON.toJson(FACADE.getMovieByID(id));
+    }
+
+    @Path("title/{title}")
+    @GET
+    @Produces({MediaType.APPLICATION_JSON})
+    public String getMovieDTOByTitle(@PathParam("title") String title){
+        return GSON.toJson(FACADE.getMovieDTOByTitle(title));
     }
 
     @POST
