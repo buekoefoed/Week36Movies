@@ -74,22 +74,6 @@ public class MovieFacade {
             em.close();
         }
 
-        /*
-        try {
-            TypedQuery query = em.createQuery("select m from Movie m where m.title like :title", Movie.class)
-                    .setParameter("title", title);
-            List<MovieDTO> movieDTOList = new ArrayList<>();
-            for (int i = 0; i < query.getResultList().size(); i++) {
-                movieDTOList.add(new MovieDTO((Movie) query.getResultList().get(i)));
-            }
-            //for (Movie m : movieList) {
-            //    movieDTOList.add(new MovieDTO(m));
-            //}
-            return movieDTOList;
-        } finally {
-            em.close();
-        }
-        */
     }
 
     public List<Movie> getMovieByDirector(String director){

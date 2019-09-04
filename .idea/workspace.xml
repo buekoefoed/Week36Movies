@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1f7387-ef77-443f-86cc-79a880e664de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/facades/MovieFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/facades/MovieFacade.java" afterDir="false" />
-    </list>
+    <list default="true" id="fd1f7387-ef77-443f-86cc-79a880e664de" name="Default Changelist" comment="getByTitle to lambda" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/facades/MovieFacade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="262">
+              <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#0#29#1" expanded="true" />
@@ -57,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rest/MovieResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="755">
+            <state relative-caret-position="857">
               <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -72,23 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/Movie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#0#17#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/rest/MovieResourceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1445">
+            <state relative-caret-position="-1403">
               <caret line="36" column="70" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
             </state>
           </provider>
@@ -245,14 +228,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rest-jpa-devops-starter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-jpa-devops-startcode-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rest-jpa-devops-starter" type="b2602c69:ProjectViewProjectNode" />
@@ -500,7 +475,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567514879405</updated>
-      <workItem from="1567514882812" duration="23508000" />
+      <workItem from="1567514882812" duration="24746000" />
     </task>
     <task id="LOCAL-00001" summary="Maven updated">
       <created>1567514980581</created>
@@ -569,9 +544,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MovieResourceTest_testGetAllLog - 2019.09.03 at 22h 32m 12s.xml">
-      <configuration name="MovieResourceTest.testGetAllLog" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MovieResourceTest_testGetAllMovies - 2019.09.03 at 22h 35m 42s.xml">
       <configuration name="MovieResourceTest.testGetAllMovies" configurationId="JUnit" />
     </history-entry>
@@ -599,13 +571,15 @@
     <history-entry file="SettingsTest - 2019.09.03 at 22h 48m 49s.xml">
       <configuration name="SettingsTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MovieResourceTest_testGetMovieByTitle - 2019.09.04 at 11h 45m 53s.xml">
+      <configuration name="MovieResourceTest.testGetMovieByTitle" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23508000" />
+    <option name="totallyTimeSpent" value="24746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Persistence" sideWeight="0.5026455" side_tool="true" weight="0.24939272" />
@@ -697,7 +671,8 @@
     <MESSAGE value="Set env vars for testDB" />
     <MESSAGE value="Changed scripted DB name" />
     <MESSAGE value="test html added" />
-    <option name="LAST_COMMIT_MESSAGE" value="test html added" />
+    <MESSAGE value="getByTitle to lambda" />
+    <option name="LAST_COMMIT_MESSAGE" value="getByTitle to lambda" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -805,6 +780,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entities/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -816,16 +798,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rest/MovieResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
+        <state relative-caret-position="857">
           <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -841,8 +816,22 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/function/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
+        <state relative-caret-position="-36">
           <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/facades/MovieFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#29#1" expanded="true" />
+            <element signature="e#0#47#1" expanded="true" />
+            <element signature="e#0#53#1" expanded="true" />
+            <element signature="e#0#21#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -857,23 +846,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facades/MovieFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#0#29#1" expanded="true" />
-            <element signature="e#0#47#1" expanded="true" />
-            <element signature="e#0#53#1" expanded="true" />
-            <element signature="e#0#21#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rest/MovieResourceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1445">
+        <state relative-caret-position="-1403">
           <caret line="36" column="70" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
         </state>
       </provider>
