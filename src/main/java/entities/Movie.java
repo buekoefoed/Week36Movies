@@ -1,11 +1,8 @@
 package entities;
 
 import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.NamedQuery;
+import java.util.List;
+import javax.persistence.*;
 
 
 @Entity
@@ -19,6 +16,8 @@ public class Movie implements Serializable {
     private String title;
     private String director;
     private int releaseYear;
+    @ElementCollection
+    private List<String> actors;
     
     public Movie() {
     }
