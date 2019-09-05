@@ -19,6 +19,6 @@ btn1.onclick = function(){
             '<tr>' + '<li>' + el.director + '</li>'  + '</tr>' +
             '<tr>' + '<li>' + el.releaseYear + '</li>'  + '</tr>' +
             '<tr>' + '<li>' + el.actors + '</li>'  + '</tr>'
-        ) + '</ul>').join(',');
+        ) + '</ul>').join('');
 }
 
