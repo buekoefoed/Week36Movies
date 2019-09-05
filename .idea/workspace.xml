@@ -43,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="61" lean-forward="true" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+            <state relative-caret-position="289">
+              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -534,7 +534,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567514879405</updated>
-      <workItem from="1567514882812" duration="30929000" />
+      <workItem from="1567514882812" duration="31850000" />
     </task>
     <task id="LOCAL-00001" summary="Maven updated">
       <created>1567514980581</created>
@@ -634,7 +634,21 @@
       <option name="project" value="LOCAL" />
       <updated>1567675904530</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added tables and rows">
+      <created>1567676721231</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1567676721231</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added .join('')">
+      <created>1567677267008</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1567677267008</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -670,7 +684,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30929000" />
+    <option name="totallyTimeSpent" value="31850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -772,7 +786,9 @@
     <MESSAGE value="added script.js" />
     <MESSAGE value="changed script to foreach" />
     <MESSAGE value="changed script to map" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed script to map" />
+    <MESSAGE value="Added tables and rows" />
+    <MESSAGE value="added .join('')" />
+    <option name="LAST_COMMIT_MESSAGE" value="added .join('')" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -955,8 +971,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="61" lean-forward="true" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+        <state relative-caret-position="289">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
         </state>
       </provider>
     </entry>
