@@ -12,6 +12,13 @@ btn1.onclick = function(){
     // root.innerHTML = '<ul>' + p.join('') + '</ul>';
     fetch(url)
     .then(response => response.json())
-    .then(data => root.innerHTML = '<ul>' + data.map(el=>'<li>'+el+'</li>') + '</ul>ul>');
+    .then(data => root.innerHTML = '<ul>'
+        + data.map(el=>'' +
+            '<tr>' + '<li>' + el.id + '</li>'  + '</tr>' +
+            '<tr>' + '<li>' + el.title + '</li>'  + '</tr>' +
+            '<tr>' + '<li>' + el.director + '</li>'  + '</tr>' +
+            '<tr>' + '<li>' + el.releaseYear + '</li>'  + '</tr>' +
+            '<tr>' + '<li>' + el.actors + '</li>'  + '</tr>' 
+        ) + '</ul>');
 }
 
