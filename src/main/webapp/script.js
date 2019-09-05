@@ -12,6 +12,6 @@ btn1.onclick = function(){
     // root.innerHTML = '<ul>' + p.join('') + '</ul>';
     fetch(url)
     .then(response => response.json())
-    .then(data => root.innerHTML = data.forEach(el=>el.value));
+    .then(data => root.innerHTML = '<ul>' + data.map(el=>'<li>'+el+'</li>') + '</ul>ul>');
 }
 
