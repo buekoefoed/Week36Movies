@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1f7387-ef77-443f-86cc-79a880e664de" name="Default Changelist" comment="getByTitle to lambda">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.html" beforeDir="false" />
-    </list>
+    <list default="true" id="fd1f7387-ef77-443f-86cc-79a880e664de" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +40,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -139,13 +144,13 @@
         <option value="$PROJECT_DIR$/src/test/java/facades/MovieFacadeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/EMF_Creator.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/main/java/rest/MovieResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/test.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/test.html" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/java/facades/MovieFacade.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/script.js" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -333,7 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MovieResourceTest.testGetMovieByTitle">
+  <component name="RunManager" selected="Tomcat Server.LocalTomcat">
     <configuration name="MovieFacadeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-jpa-devops-starter" />
       <extension name="coverage">
@@ -361,21 +366,6 @@
       <option name="MAIN_CLASS_NAME" value="facades.MovieFacadeTest" />
       <option name="METHOD_NAME" value="testAFacadeMethod" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MovieResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-jpa-devops-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rest" />
-      <option name="MAIN_CLASS_NAME" value="rest.MovieResourceTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -483,21 +473,60 @@
         </option>
       </method>
     </configuration>
+    <configuration name="index.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.html" />
+      <deployment>
+        <artifact name="rest-jpa-devops-starter:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/rest_jpa_devops_starter_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="index_html_rest-jpa-devops-starter" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="rest-jpa-devops-starter:war" />
+        </option>
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Tomcat Server.LocalTomcat" />
-      <item itemvalue="JUnit.MovieResourceTest" />
       <item itemvalue="JUnit.MovieResourceTest.testGetMovieByTitle" />
       <item itemvalue="JUnit.MovieFacadeTest.testAFacadeMethod" />
       <item itemvalue="JUnit.MovieFacadeTest" />
       <item itemvalue="JUnit.SettingsTest" />
+      <item itemvalue="Tomcat Server.index.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Tomcat Server.index.html" />
         <item itemvalue="JUnit.MovieResourceTest.testGetMovieByTitle" />
         <item itemvalue="JUnit.SettingsTest" />
         <item itemvalue="JUnit.MovieFacadeTest" />
         <item itemvalue="JUnit.MovieFacadeTest.testAFacadeMethod" />
-        <item itemvalue="JUnit.MovieResourceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -511,7 +540,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567514879405</updated>
-      <workItem from="1567514882812" duration="28261000" />
+      <workItem from="1567514882812" duration="28526000" />
     </task>
     <task id="LOCAL-00001" summary="Maven updated">
       <created>1567514980581</created>
@@ -576,7 +605,21 @@
       <option name="project" value="LOCAL" />
       <updated>1567580314030</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added new index and frontend">
+      <created>1567674077562</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1567674077562</updated>
+    </task>
+    <task id="LOCAL-00011" summary="tomcat7:undeploy">
+      <created>1567674146657</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1567674146657</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -612,11 +655,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28261000" />
+    <option name="totallyTimeSpent" value="28526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Persistence" sideWeight="0.5026455" side_tool="true" weight="0.24939272" />
@@ -709,7 +751,9 @@
     <MESSAGE value="Changed scripted DB name" />
     <MESSAGE value="test html added" />
     <MESSAGE value="getByTitle to lambda" />
-    <option name="LAST_COMMIT_MESSAGE" value="getByTitle to lambda" />
+    <MESSAGE value="Added new index and frontend" />
+    <MESSAGE value="tomcat7:undeploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="tomcat7:undeploy" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -810,13 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/function/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-36">
@@ -890,10 +927,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
