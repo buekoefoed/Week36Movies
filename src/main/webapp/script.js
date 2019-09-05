@@ -14,11 +14,11 @@ btn1.onclick = function(){
     .then(response => response.json())
     .then(data => root.innerHTML = '<ul>'
         + data.map(el=>'' +
-            '<tr>' + '<li>' + el.id + '</li>'  + '</tr>' +
-            '<tr>' + '<li>' + el.title + '</li>'  + '</tr>' +
-            '<tr>' + '<li>' + el.director + '</li>'  + '</tr>' +
-            '<tr>' + '<li>' + el.releaseYear + '</li>'  + '</tr>' +
-            '<tr>' + '<li>' + el.actors + '</li>'  + '</tr>' 
+            '<tr>' + '<li>' + el.id.join('') + '</li>'  + '</tr>' +
+            '<tr>' + '<li>' + el.title.join('') + '</li>'  + '</tr>' +
+            '<tr>' + '<li>' + el.director.join('') + '</li>'  + '</tr>' +
+            '<tr>' + '<li>' + el.releaseYear.join('') + '</li>'  + '</tr>' +
+            '<tr>' + '<li>' + el.actors.join('') + '</li>'  + '</tr>'
         ) + '</ul>');
 }
 
