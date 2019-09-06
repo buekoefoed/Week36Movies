@@ -1,17 +1,17 @@
-[![Build Status](https://travis-ci.org/dat3startcode/rest-jpa-devops-startcode.svg?branch=master)](https://travis-ci.org/dat3startcode/rest-jpa-devops-startcode)
+### Uge 36 opgaver
 
-*This project is meant as start code for projects and exercises given in Flow-1+2 at http://cphbusiness.dk in the Study Program "AP degree in Computer Science"*
+Afleveringerne er temmelig rodede. De fleste javascript opgaver ligger som løse seperate javascript filer, som jeg har lagt på et google drev jeg linker til.
+Jeg vil prøve at give overblik over hvad er ca hvor, men mange opgaver muterede til andre opgaver hen ad vejen så nogle løsninger er nu udkommenterede i senere opgaver.
 
-*Projects which are expected to use this start-code are projects that require all, or most of the following technologies:*
- - *JPA and REST*
-- *Testing, including database test*
-- *Testing, including tests of REST-API's*
-- *CI and CONTINUOUS DELIVERY*
+#### Opgaver til dag 1, dag 2 og dag 5
+* Se repository week36movies på github
+* Link til app på droplet: <https://buehub.com/rest-jpa-devops-starter/>
 
-### Preconditions
-*In order to use this code, you should have a local developer setup + a "matching" droplet on Digital Ocean as described in the 3. semester guidelines* 
-# Getting Started
+Tryk på knappen for at få en liste over film. Jeg havde ikke overskud til at gøre noget ud af styling.
 
-This project contains two major documentation files: 
- - [First time users - getting started](README_proof_of_concept.md)
- - [How to use for future projects](README_how_to_use.md)
+#### Opgaver til dag 3 og 4
+* Se google drev <https://drive.google.com/drive/folders/1K9hxmT_kfdS7Q4xbQbxjQ-PB-NsGdMGf>
+
+Der er to folders med blandede opgaver til dag 3 og 4. Mange af opgaverne til dag 3 blev arbejdet videre på dag 4.
+
+
